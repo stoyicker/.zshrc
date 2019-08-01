@@ -104,8 +104,3 @@ export ANDROID_NDK_HOME=
 
 # Make Gradle less annoying
 JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
-
-# Golang
-export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go
-export PATH=$PATH:$(go env GOPATH)/bin
