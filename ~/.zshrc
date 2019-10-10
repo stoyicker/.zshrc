@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jorge/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -53,7 +53,7 @@ export ZSH_CUSTOM=$ZSH/custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-DEFAULT_USER=jorge
+DEFAULT_USER=$USER
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -71,11 +71,13 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+export EDITOR='nano'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -98,9 +100,6 @@ PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 # export ANDROID_NDK_HOME="$ANDROID_HOME/ndk-bundle"
 export ANDROID_NDK_HOME=
-
-# added by travis gem
-[ -f /home/jorge/.travis/travis.sh ] && source /home/jorge/.travis/travis.sh
 
 # Make Gradle less annoying
 JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
