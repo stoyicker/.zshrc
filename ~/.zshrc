@@ -88,6 +88,8 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias pidcat="python ~/bin/pydcat.py"
+
 PATH="$PATH/"
 
 export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
