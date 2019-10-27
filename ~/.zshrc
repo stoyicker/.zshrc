@@ -92,7 +92,7 @@ alias pidcat="python ~/bin/pydcat.py"
 
 PATH="$PATH/"
 
-export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
+export JAVA_HOME="~/.sdkman/candidates/java/current/jre"
 PATH="$JAVA_HOME/bin:$PATH"
 
 export ANDROID_HOME="~/Android/Sdk"
