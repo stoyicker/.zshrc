@@ -88,7 +88,7 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias pidcat="python ~/bin/pydcat.py"
+alias pidcat="python ~/bin/pidcat.py"
 
 PATH="$PATH/"
 
