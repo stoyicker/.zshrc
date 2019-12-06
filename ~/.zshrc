@@ -95,7 +95,7 @@ PATH="$PATH/"
 export JAVA_HOME="~/.sdkman/candidates/java/current/jre"
 PATH="$JAVA_HOME/bin:$PATH"
 
-export ANDROID_HOME="~/Android/Sdk"
+export ANDROID_HOME="$(readlink -f ~/Android/Sdk)"
 PATH="$ANDROID_HOME/tools:$PATH"
 PATH="$ANDROID_HOME/tools/bin:$PATH"
 PATH="$ANDROID_HOME/platform-tools:$PATH"
