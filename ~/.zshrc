@@ -88,6 +88,12 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+adb_set-anim() {
+  adb shell settings put global window_animation_scale $1 && \
+  adb shell settings put global transition_animation_scale $1 && \
+  adb shell settings put global animator_duration_scale $1
+}
+
 alias pidcat="python ~/bin/pidcat.py"
 
 PATH="$PATH/"
