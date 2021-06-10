@@ -94,6 +94,11 @@ adb_set-anim() {
   adb shell settings put global animator_duration_scale $1
 }
 
+adb_set-layout-borders() {
+  adb shell setprop debug.layout $1 && \
+  adb shell service call activity 1599295570 > /dev/null
+}
+
 alias pidcat="python ~/bin/pidcat.py"
 
 PATH="$PATH/"
