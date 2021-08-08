@@ -87,6 +87,8 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cgrep="grep --color=ALWAYS"
+alias fcgrep="fgrep --color=ALWAYS"
 
 adb_set-anim() {
   adb shell settings put global window_animation_scale $1 && \
