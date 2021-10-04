@@ -90,6 +90,11 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 alias cgrep="grep --color=ALWAYS"
 alias fcgrep="fgrep --color=ALWAYS"
 
+mvc() {
+  mkdir -p "$(dirname "$2")"
+  mv "$1" "$2"
+}
+
 adb_set-anim() {
   adb shell settings put global window_animation_scale $1 && \
   adb shell settings put global transition_animation_scale $1 && \
