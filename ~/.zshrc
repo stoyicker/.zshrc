@@ -95,6 +95,11 @@ mvc() {
   mv "$1" "$2"
 }
 
+cpc() {
+  mkdir -p "$(dirname "$2")"
+  cp "$1" "$2"
+}
+
 adb_set-anim() {
   adb shell settings put global window_animation_scale $1 && \
   adb shell settings put global transition_animation_scale $1 && \
