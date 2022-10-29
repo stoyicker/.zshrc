@@ -127,4 +127,8 @@ PATH="$ANDROID_HOME/platform-tools:$PATH"
 export ANDROID_NDK_HOME=
 
 # Make Gradle less annoying
-JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
+export JAVA_TOOL_OPTIONS='-Djava.awt.headless=true'
+
+# Heap for AOSP stuff
+export _JAVA_OPTIONS="-Xmx20g"
+
