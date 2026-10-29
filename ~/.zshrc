@@ -51,7 +51,7 @@ export ZSH_CUSTOM=$ZSH/custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting repo gcloud docker docker-compose zsh-direnv)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting repo gcloud docker docker-compose direnv)
 
 DEFAULT_USER=$USER
 
